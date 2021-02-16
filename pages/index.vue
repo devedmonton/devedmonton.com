@@ -5,7 +5,7 @@
             class="py-8 bg-white overflow-hidden max-w-7xl mx-auto sm:px-4"
         >
             <div
-                class="relative mx-8 sm:mx-12 pb-8 lg:my-4 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
+                class="relative mx-8 sm:mx-12 pb-6 lg:my-4 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
             >
                 <div class="relative">
                     <h3
@@ -46,6 +46,7 @@
                     </div>
                 </div>
             </div>
+            <SignupForm />
         </div>
 
         <div
@@ -375,11 +376,13 @@
 </template>
 
 <script>
-import VButton from "~/components/VButton.vue";
+import VButton from "../components/VButton.vue";
+import SignupForm from "../components/SignupForm";
 
 export default {
     components: {
         VButton,
+        SignupForm,
     },
 };
 </script>
